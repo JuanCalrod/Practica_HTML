@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(11, 0, 0);
+    transition:all .4s ease-in-out;
+    scroll-behavior: smooth;  
+}
+
+header{
+    padding: 12px;
+    display: flex;
+    background-color: #f5ecec;
+    gap: 20px;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+}
+
+body{
+    min-height: 100vh; /*Se usa para que la pagina funcione en celulares*/
+}
+
+ul{
+   display: flex;
+   gap: 20px;
+}
+
+h1:hover{
+    -webkit-transform:scale(1.4);transform:scale(1.4);
+    overflow:hidden;
+        
+}
+
+.gal{
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    box-shadow: 4px 6px 15px black;
+   
+}
+
+.Contenedor{
+    padding: 250px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/Fondo/wolf-1745336_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.contenedor1{
+    padding: 6%;
+     
+}
+
+.contenedor2{
+    padding: 6%;
+    background-color:  #f5ecec ; 
+    
+}
+
+.gal1{
+    border-radius: 20px;
+    width: 210px;
+    height: 140px;
+    box-shadow: 4px 6px 15px black;
+      
+}
+
+.gal1:hover{
+    -webkit-transform:scale(1.2);transform:scale(1.2);
+    overflow:hidden;
+    
+}
+
+.lobo, .columna{
+    padding: 20px ;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,220px);
+    object-fit:cover;
+    row-gap: 20px;
+    gap: 12px;
+    
+}
+
+#Galeria1{
+    padding: 1px;
+       
+}
+
+.horizontal{
+    padding: 9px 20px 20px 20px;
+    gap: 7px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display:flex;
+    width: 1100px;
+    height: 150px;
+    box-shadow: 10px 9px 15px black;
+    cursor: move;
+    border-radius: 30px;
+                  
+}
+
+.contenedor3{
+    padding: 6%;
+    justify-content: center;
+    border: 5px 5px 6px 5px black;
+    
+}
+
+.contenedor4{
+    padding: 6%;
+    justify-content: center;
+    border: 5px black;
+      
+}
+
+.gal2{
+    border-radius: 20px;
+    width: 210px;
+    height: 140px;
+    box-shadow: 4px 6px 10px black;
+    
+   
+}
+
+.contenedor5{
+    padding: 3%;
+    background-color:  #f5ecec ;
+    justify-content: center;
+    border-color: black;
+        
+}
+
+#Galeria2{
+    padding: 10px;
+       
+}
+
+.contenedor6{
+    padding: 6%;
+    justify-content: center;
+    border-color: black;    
+    
+}
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round); /*permite importar reglas desde otras hojas de estilo.*/
+
+
+h2:hover{
+    -webkit-transform:scale(1.4);transform:scale(1.4);
+    overflow:hidden;
+        
+}
+
+h2 {
+  color: hsla(0, 0%, 0%, .9);
+  font: normal 110px Varela Round, sans-serif;
+  height: 110px;
+  left: 0px;
+  letter-spacing: 16px;
+  margin: -110px 0 0 0;
+  text-align: center;
+  text-transform: uppercase; /*Palabra clave que fuerza a todos los caracteres a ser convertidos a mayúsculas.*/
+  top: 40%;
+  width: 100%;
+  animation: move linear 2000ms infinite;  
+  z-index: 10;
+}
+
+@keyframes move { /*permite controlar los pasos intermedios en una secuencia de animación*/
+  0% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 hsla(180, 100%, 50%, 1), 
+      -3px -3px 0 hsla(180, 100%, 50%, 1), 
+      -2px -2px 0 hsla(180, 100%, 50%, 1), 
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1), 
+      3px 3px 0 hsla(0, 100%, 50%, 1), 
+      2px 2px 0 hsla(0, 100%, 50%, 1), 
+      1px 1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 hsla(0, 100%, 50%, 1), 
+      -3px 3px 0 hsla(0, 100%, 50%, 1), 
+      -2px 2px 0 hsla(0, 100%, 50%, 1), 
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1), 
+      3px -3px 0 hsla(180, 100%, 50%, 1), 
+      2px -2px 0 hsla(180, 100%, 50%, 1), 
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 hsla(180, 100%, 50%, 1), 
+      3px 3px 0 hsla(180, 100%, 50%, 1), 
+      2px 2px 0 hsla(180, 100%, 50%, 1), 
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1), 
+      -3px -3px 0 hsla(0, 100%, 50%, 1), 
+      -2px -2px 0 hsla(0, 100%, 50%, 1), 
+      -1px -1px 0 hsla(0, 100%, 50%, 1)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }  
+}
+
+footer{
+    padding: 6%;
+    justify-content: center;
+    display: flex;
+    gap: 40px;
+    background-color: #f5ecec;
+    align-items: center;
+    
+}
+
+
+.gal3{
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    box-shadow: 1px 1px 5px black,
+    5px 5px 5px gray,
+    10px 10px 5px rgb(14, 33, 133),
+    5px 5px 5px rgb(0,0,0, 0.5) inset;;
+       
+}
+
+.gal3:hover{
+    -webkit-transform:scale(1.2);transform:scale(1.2);
+    overflow:hidden;
+    filter: opacity(.5);
+    
+   
+}
+
+h3{
+    animation-name: miAnimacion;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes miAnimacion {
+    from {color: red;}
+    to {color: black;}
+    
+}
+
+.listado1{
+    border-color: black;
+}
+
+.parraf3{
+   display: inline-block; /*combina las ventajas de bloque de colocar medidas al elemento y propiedades del modelo de caja correctamente¨*/
+   -webkit-box-sizing: border-box; /*establece como se calcula el ancho y alto total de un elemento.*/
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   padding: 5px;
+   border: none;
+   font: normal 28px/normal "Warnes", Helvetica, sans-serif;
+   color: rgba(255,255,255,1);
+   text-decoration: normal;
+   text-align: center;
+   -o-text-overflow: clip; /*determina como el contenido que se desborda y que no es mostrado, va a hacérsele notar a los usuarios.*/
+   text-overflow: clip;
+   white-space: pre; /*determina cómo se maneja el espacio en blanco dentro de un elemento. */
+   text-shadow: 0 0 5px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px #ff00de , 0 0 60px #ff00de , 0 0 70px #ff00de , 0 0 90px #ff00de ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); /*es una funciones de aceleración y se usan con frecuencia para describir curvas suaves que se pueden escalar.*/
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1); /*es una forma de animar los cambios de las propiedades en CSS.*/
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+.parraf3:hover {
+    text-shadow: 0 0 5px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+  }
